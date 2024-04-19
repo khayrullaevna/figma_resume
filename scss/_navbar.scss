@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+
+  &__link {
+    display: none; 
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  &__checkbox {
+    display: none;
+  }
+  
+  &__button {
+    display: none; 
+  }
+  
+  &__icon {
+    display: block; 
+  }
+  
+}
+
+@media (max-width: 37.5rem) {
+  .nav__button {
+    display: block; 
+  }
+
+  .nav__checkbox:checked ~ .nav__links {
+    position: absolute; 
+    top: 100%; 
+
+  }
+
+  .nav__link {
+    display: inline-block; 
+    padding: 10px 20px;
+    text-align: center;
+  }
+}

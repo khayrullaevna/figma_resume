@@ -1,0 +1,35 @@
+.footer {
+  padding: 5rem 25rem 2rem;
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    text-align: center;
+    color: #21243d;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .footer {
+    padding: 8rem 5rem 2rem;
+
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__text {
+      text-align: center;
+      color: #21243d;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+  }
+}
